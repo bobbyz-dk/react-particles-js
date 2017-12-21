@@ -4,7 +4,6 @@ const production = process.env.NODE_ENV === "production";
 
 const plugins = production ? 
 	[
-		new webpack.optimize.DedupePlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
 		new webpack.optimize.UglifyJsPlugin({
 		    debug: false,

@@ -5,8 +5,8 @@
   "main": "lib/particles.js",
   "types": "index.d.ts",
   "scripts": {
-    "compile": "webpack",
-    "compile:production": "NODE_ENV=production webpack"
+    "compile": "cross-env webpack",
+    "compile:production": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "url": "https://github.com/Wufe/react-particles-js",
@@ -16,8 +16,9 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.35",
-    "babel-loader": "^8.0.0-beta.0",
     "@babel/preset-env": "^7.0.0-beta.35",
+    "babel-loader": "^8.0.0-beta.0",
+    "cross-env": "^5.1.2",
     "json-loader": "^0.5.7",
     "react-dom": "^16.0.0",
     "ts-loader": "^2.3.7",
